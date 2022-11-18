@@ -1,0 +1,18 @@
+.primary {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    padding: 20px 34px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #92959A;
+    color: #fff;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: #63666a;
+    }
+}
