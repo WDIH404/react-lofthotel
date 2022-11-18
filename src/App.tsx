@@ -7,11 +7,13 @@ import Main from './Pages/Main/Main'
 
 function App() {
   return (
-    <div className={global.container}>
-      <Header />
-      <Main />
-    </div>
+    <>
+      <div className={global.container}>
+        <Header />
+      </div>
+      <Main /> 
+    </>
+    
   );
 }
-
 export default App;

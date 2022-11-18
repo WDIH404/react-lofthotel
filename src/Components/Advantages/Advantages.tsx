@@ -1,11 +1,24 @@
 import React from 'react'
 
-type Props = {}
+import s from "./advantages.module.scss"
 
-function Main({}: Props) {
+interface OwnProps {
+  
+  title: string
+  icon: string
+}
+
+type props = OwnProps;
+
+function Advantages(props: props) {
   return (
-    <div>Main</div>
+    <div className={s.about_advantages__item}>
+        <div className={s.about_advantages__icon}>
+          <img src={props.icon} alt="Icon" />
+        </div>
+        <span className={s.about_advantages__text}>{props.title}</span>
+    </div>
   )
 }
 
-export default Main
+export default Advantages

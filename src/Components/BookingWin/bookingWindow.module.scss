@@ -1,0 +1,41 @@
+.booking {
+    background-color: #F2F2F2;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    .container {
+        max-width: 1290px;
+        margin: 0 auto;
+    }
+    &_wrapper {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    &__input {
+        border: 1px solid #D1D1D1;
+        height: 62px;
+        width: 405px;
+        padding: 0 20px;
+    }
+}
+
+.button {
+    &_square{
+        padding: 21px;
+        background-color: #92959A;
+        max-height: 62px;
+        border: none;
+    }
+    &__icon {
+        max-width: 24px;
+        max-height: 24px;
+    }
+}

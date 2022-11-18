@@ -1,0 +1,72 @@
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #2E363E;
+    margin-bottom: 40px;
+}
+
+.hero {
+    padding: 40px 0;
+    background-color: #F2F2F2;
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_left {
+        &__title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 85px;
+            color: #2E363E;
+            margin-bottom: 30px; 
+        }
+        &__description {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+        }
+        &__buttons {
+            margin-top: 30px;
+        }
+    }
+}
+
+.button {
+    &_secondary {
+        background-color: #fff;
+        border: 1px solid  #92959A;
+        margin-left: 20px;
+        color: #202020;
+    }
+}
+
+.about {
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+
+    &_info {
+        max-width: 630px;
+    }
+    &__description {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    &_advantages {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

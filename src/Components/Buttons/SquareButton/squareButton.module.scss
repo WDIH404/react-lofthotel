@@ -1,0 +1,16 @@
+.square {
+    padding: 21px;
+    background-color: #92959A;
+    max-height: 62px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: #63666a;
+    }
+}
+
+.button__icon {
+    max-width: 24px;
+    max-height: 24px;
+}

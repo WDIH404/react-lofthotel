@@ -1,6 +1,6 @@
 .navbar {
-    overflow: hidden;
     position: relative;
+    margin-bottom: 15px;
     &_top {
       display: flex;
       justify-content: space-between;
@@ -13,7 +13,7 @@
         position: absolute;
         height: 1px;
         left: 0;
-        width: 100vw;
+        width: 100%;
         background-color: #ededed;
         bottom: 35px;
       }

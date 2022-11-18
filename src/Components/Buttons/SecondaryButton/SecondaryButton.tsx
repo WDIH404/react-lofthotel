@@ -1,11 +1,20 @@
-import React from 'react'
+import React, {FunctionComponent} from 'react';
+import s from "./secondaryButton.module.scss"
 
-type Props = {}
+interface OwnProps {
+  
+  title: string
+}
 
-function Header({}: Props) {
+type Props = OwnProps;
+
+const SecondaryButton: FunctionComponent<Props> = (props) => {
+
   return (
-    <div>Header</div>
+    <>
+      <button className={s.secondary}>{props.title}</button>
+    </>
   )
 }
 
-export default Header
+export default SecondaryButton
