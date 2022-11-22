@@ -1,5 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import s from "./header.module.scss"
+import { useNavigate } from 'react-router-dom';
 
 import logo from "../../Assets/img/logo.svg"
 import telegram from "../../Assets/img/telegram.svg"
@@ -12,13 +13,14 @@ import call from "../../Assets/img/call.svg"
 import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
 
 function Header() {
+  const navigate = useNavigate()
   return (
     <header className={s.navbar}>
       <div className={s.container}>
         <div className={s.navbar_top}>
-          <a href="#" className={s.logo}>
+          <div onClick={()=>navigate("/")} className={s.logo}>
             <img src={logo} alt="Logotype" className={s.logo__image} />
-          </a>
+          </div>
           <div className={s.geo}>
             <img src={geo} alt="geo" className={s.geo__icon} />
             <a href="https://yandex.ru/maps/-/CCUZR4FvKB" target="_blank" className={s.geo__text}
@@ -44,7 +46,7 @@ function Header() {
               <img src={whatsapp} alt="Whatsapp" className={s.social__icon} />
             </button>
           </div>
-          <PrimaryButton title={"Забронировать"}/>
+          <PrimaryButton action={()=>navigate("/booking")} title={"Забронировать"}/>
         </div>
         <div className={s.navbar_bottom}>
           <nav className={s.navbar_menu}>

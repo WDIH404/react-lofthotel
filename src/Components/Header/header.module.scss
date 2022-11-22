@@ -21,8 +21,8 @@
     &_menu {
       list-style: none;
       display: flex;
+      gap: 40px;
       &__item {
-        margin-right: 40px;
         transition: all 0.2s ease-in-out;
         &:hover {
           transform: translateY(-2px);
@@ -40,6 +40,7 @@
   .logo {
     width: 196px;
     height: 37px;
+    cursor: pointer;
     &__image {
       width: 100%;
       height: 100%;

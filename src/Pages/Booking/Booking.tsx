@@ -2,10 +2,10 @@ import React from 'react'
 
 type Props = {}
 
-function Main({}: Props) {
+function Booking({}: Props) {
   return (
-    <div>Main</div>
+    <div>Booking</div>
   )
 }
 
-export default Main
+export default Booking

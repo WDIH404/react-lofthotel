@@ -2,10 +2,10 @@ import React from 'react'
 
 type Props = {}
 
-function Main({}: Props) {
+function Gallery({}: Props) {
   return (
-    <div>Main</div>
+    <div>Gallery</div>
   )
 }
 
-export default Main
+export default Gallery

@@ -8,7 +8,6 @@ import BookingWindow from '../../Components/BookingWin/BookingWindow';
 import Advantages from '../../Components/Advantages/Advantages';
 import Card from '../../Components/Card/Card';
 import ContactsInfo from '../../Components/ContactsInfo/ContactsInfo';
-import Footer from '../../Components/Footer/Footer';
 
 // Images
 import hero_image from '../../Assets/img/hero-image.svg';
@@ -23,8 +22,10 @@ import car from '../../Assets/img/icons/car.svg';
 import image0 from '../../Assets/img/rooms/1.png';
 import image1 from '../../Assets/img/rooms/2.png';
 import image2 from '../../Assets/img/rooms/3.png';
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
+  const navigate = useNavigate()
   return (
     <>
       <section className={s.hero}>
@@ -36,7 +37,7 @@ function Main() {
                 Ваше идеальное решение для отдыха с природой
               </span>
               <div className={s.hero_left__buttons}>
-                <PrimaryButton title={'Забронировать'} />
+                <PrimaryButton action={()=>navigate("/booking")} title={'Забронировать'} />
                 <SecondaryButton title={'Узнать больше'} />
               </div>
             </div>
@@ -111,10 +112,9 @@ function Main() {
                       title={'Абхазия, г. Новый Афон, ул. Ладария'}
                     />
                     <ContactsInfo label={'Телефон'} title={'+7 (940) 921-05-55'} />
-                    <ContactsInfo label={'Мессенеджеры для связи'} title={'Иконки'} />
                     <ContactsInfo label={'Электронная почта'} title={'loft@hotel.ru'} />
                   </div>
-                  <PrimaryButton title={'Забронировать'} />
+                  <PrimaryButton action={()=>navigate("/booking")} title={'Забронировать'} />
                 </div>
                 <a href="#">
                   <img src={map} alt="Map" />
@@ -124,8 +124,6 @@ function Main() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }
